@@ -10,4 +10,11 @@ if top_of_range.isdigit():
           quit()
 else:
      print('Please type a number next time. ')
-     quit()          
+     quit() 
+
+random_number = random.randint(0, top_of_range)
+guesses = 0
+
+while True:
+     guesses += 1
+     user_guesses = input("Make a guess: ")
